@@ -13,7 +13,7 @@ for (let i=0; i<arr.length; i++) {
     const [a, b] = arr[i].trim().split(" ")
 
     if (dance.has(a) && !dance.has(b)) dance.add(b)
-    else if (!dance.has() && dance.has(b)) dance.add(a)
+    else if (!dance.has(a) && dance.has(b)) dance.add(a)
 }
 
 console.log(dance.size);
